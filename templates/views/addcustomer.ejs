@@ -1,57 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/sendmoney.css">
-   
+      <title>Document</title>
+      <link rel="stylesheet" href="/css/sendmoney.css">
+
 </head>
+
 <body>
-    <%- include('../partials/navbar'); %>
-    <div class="overlay">
-        <!-- LOGN IN FORM by Omar Dsoky -->
-        <form action="/addcustomer" method="POST">
-           <!--   con = Container  for items in the form-->
-           <div class="con">
-           <!--     Start  header Content  -->
-           <header class="head-form">
-              <h2>Add Customer</h2>
-              <br><br>
-           </header>
-           <!--     End  header Content  -->
-           <br>
-           <div class="field-set">
-             
+      <%- include('../partials/navbar'); %>
+            <div class="overlay">
+                  <!-- LOGN IN FORM by Omar Dsoky -->
+                  <form action="/addcustomer" method="POST">
+                        <!--   con = Container  for items in the form-->
+                        <div class="con">
+                              <!--     Start  header Content  -->
+                              <header class="head-form">
+                                    <h2>Add Customer</h2>
+                                    <br><br>
+                              </header>
+                              <!--     End  header Content  -->
+                              <br>
+                              <div class="field-set">
 
-              <!--   user name -->
-              <input class="form-input" id="txt-input" type="text" name="name" placeholder="Enter name" required>
-                <!--   user name Input-->
-                 <input class="form-input" id="txt-input" type="text" name="email" placeholder="Enter email" required>
-             
-              <br>
 
-             <!--   user name Input-->
-              <input class="form-input" id="txt-input" type="text" name="bankBalance" placeholder="Enter BankBalance" required>
-             
-                   <!--   Password -->
-             
-              
-              <!--   Password Input-->
-              <input class="form-input" type="text" placeholder="Enter Account No" id="txt-input"  name="accountno" required>
-             
-              <input class="form-input" id="txt-input" type="text" name="city" placeholder="Enter City" required>
+                                    <!--   user name -->
+                                    <input class="form-input" id="txt-input" type="text" name="name"
+                                          placeholder="Enter name" required>
+                                    <!--   user name Input-->
+                                    <input class="form-input" id="txt-input" type="text" name="email"
+                                          placeholder="Enter email" required>
 
-              <input class="form-input" id="txt-input" type="text" name="mobileno" placeholder="Enter Mobile no" required>
-        <!--      Show/hide password  -->
-        <br><br>
-               
-             
-             
-              <br>
-        <!--        buttons -->
-        <!--      button LogIn -->
-              <button class="pay" type="submit"> Add </button>
-          
-        </form>
-        </div>
+                                    <br>
+
+                                    <!--   user name Input-->
+                                    <input class="form-input" id="txt-input" type="text" name="bankBalance"
+                                          placeholder="Enter BankBalance" required>
+
+                                    <!--   Password -->
+
+
+                                    <!--   Password Input-->
+                                    <input class="form-input" type="text" placeholder="Enter Account No" id="txt-input"
+                                          name="accountno" required>
+
+                                    <input class="form-input" id="txt-input" type="text" name="city"
+                                          placeholder="Enter City" required>
+
+                                    <input class="form-input" id="txt-input" type="text" name="mobileno"
+                                          placeholder="Enter Mobile no" required>
+                                    <!--      Show/hide password  -->
+                                    <br><br>
+
+
+
+                                    <br>
+                                    <!--        buttons -->
+                                    <!--      button LogIn -->
+                                    <button class="pay" type="submit"> Add </button>
+
+                  </form>
+            </div>
 </body>
+
 </html>

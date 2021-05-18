@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="	https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet"
+    href="	https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot">
+  <title>Document</title>
 </head>
+
 <body>
-    <%- include('../partials/navbar'); %>
+  <%- include('../partials/navbar'); %>
     <h2 class="glow">Transactions</h2>
     <%if (records!==null){ %>
-    <table class="table table-striped table-primary">
+      <table class="table table-striped table-primary">
         <thead>
-          <tr>            
+          <tr>
             <th>SenderEmail</th>
             <th>ReceiverEmail</th>
             <th>Amount</th>
@@ -23,22 +26,33 @@
           </tr>
         </thead>
         <tbody>
-          <%if (records.length >0){ %>
-          <% records.forEach(function(row){ %>
-          <tr>            
-            <td><%= row.senderemail %></td>
-            <td><%= row.receiveremail %></td>
-            <td><%= row.amount %></td>
-            <td><%= row.dateoftransfer %></td>
-            <td><%= row.timeoftransfer %></td>
-          </tr>
-          <% })}else{ %>
-            <tr>
-                <td colspan="5">No Record Found</td> 
+          <%if (records.length>0){ %>
+            <% records.forEach(function(row){ %>
+              <tr>
+                <td>
+                  <%= row.senderemail %>
+                </td>
+                <td>
+                  <%= row.receiveremail %>
+                </td>
+                <td>
+                  <%= row.amount %>
+                </td>
+                <td>
+                  <%= row.dateoftransfer %>
+                </td>
+                <td>
+                  <%= row.timeoftransfer %>
+                </td>
               </tr>
-            <% } %>
+              <% })}else{ %>
+                <tr>
+                  <td colspan="5">No Record Found</td>
+                </tr>
+                <% } %>
         </tbody>
       </table>
       <% } %>
 </body>
+
 </html>

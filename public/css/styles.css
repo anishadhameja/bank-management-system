@@ -1,87 +1,79 @@
-body
-{
-background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
-background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-background-attachment: fixed;
-  background-repeat: no-repeat;
-
-
+body {
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     font-family: 'Vibur', cursive;
-/*   the main font */
+    /*   the main font */
     font-family: 'Abel', sans-serif;
-opacity: .95;
+    opacity: .95;
 }
-ul
-{
+
+ul {
     list-style-type: none;
-    padding:0;
-    margin:0;
-    background-color:azure;
+    padding: 0;
+    margin: 0;
+    background-color: azure;
     overflow: hidden;
 }
-li
-{
-    float:left;
+
+li {
+    float: left;
 }
 
-li a
-{
-    display:block;
-    color:blueviolet;
+li a {
+    display: block;
+    color: blueviolet;
     text-align: center;
-    padding:15px 18px; /* from top,from right */
-    text-decoration:none;
-    background:cover;
-    
+    padding: 15px 18px;
+    /* from top,from right */
+    text-decoration: none;
+    background: cover;
 }
 
-li a:hover
-{
-    background-color:aquamarine;
+li a:hover {
+    background-color: aquamarine;
     text-decoration: underline;
 }
 
-.righty
-{
-    float:right;
+.righty {
+    float: right;
 }
-h1
-{
-    color:crimson;
+
+h1 {
+    color: crimson;
     text-align: center;
     font-size: 40px;
     font-family: monospace;
 }
 
-table, th, td{
+table, th, td {
     border: 2px solid black;
     margin-right: auto;
     margin-left: auto;
-    margin-top:150px;
+    margin-top: 150px;
     width: 1200px;
     height: 50px;
     text-align: center;
     border-collapse: collapse;
 }
 
-
-
-#features1{
-	text-align: center;
-	padding: 10% 15%;
+#features1 {
+    text-align: center;
+    padding: 10% 15%;
 }
 
-.button{
+.button {
     background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
     width: 80px;
-    left:10px;
+    left: 10px;
     height: 30px;
     text-align: center;
     text-align: center;
 }
 
-.bimage{
+.bimage {
     /* position: absolute;
     left:550px; */
     width: 2000px;
@@ -89,35 +81,33 @@ table, th, td{
     background-image: url("/images/bank.jpg");
 }
 
-#footer{
-    
+#footer {
     top: 180px;
     text-align: center;
-    left:100px;
+    left: 100px;
 }
 
 .glow {
-    color:darkblue;
+    color: darkblue;
     white-space: nowrap;
     position: absolute;
     top: 15%;
     left: 50%;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     transform: translate(-50%, -50%);
     font-size: 3em;
     letter-spacing: 0.1em;
     transition: 0.3s;
-    text-shadow: 1px 1px 0 darkblue, 1px 2px 0 darkblue, 1px 3px 0 darkblue,1px 4px 0 darkblue;
+    text-shadow: 1px 1px 0 darkblue, 1px 2px 0 darkblue, 1px 3px 0 darkblue, 1px 4px 0 darkblue;
 }
 
 .glow:hover {
     transition: 0.3s;
     transform: scale(1.1)translate(-50%, -50%);
     text-shadow: 1px -1px 0 maroon, 1px -2px 0 maroon, 1px -3px 0 maroon;
-  }
-  
-  
-  .banner {
+}
+
+.banner {
     position: absolute;
     top: 35%;
     left: 50%;
